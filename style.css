@@ -1,0 +1,388 @@
+:root {
+    --primary: #FFB600;
+    --seconary: #000000;
+    --light: #fff
+}
+
+html{
+    font-size: 62.5%;
+    font-family: 'Montserrat';
+}
+
+p, span{
+    font-size: 1.6rem;
+    font-weight: 500;
+
+}
+
+.text-center{
+    text-align: center;
+}
+
+button {
+    padding: 1rem 3rem;
+    cursor: pointer; 
+    font-weight: 800;         
+}
+
+.btn-primary{
+    background-color: #000000;
+    color: var(--light);
+}
+
+.btn-secondary {
+    background-color: #FFB600;
+    padding: 15px 40px;   
+    color: #000000;
+    cursor: pointer;     
+    border: none;
+}
+
+.btn-alt{
+    border: 1px solid var(--seconary);
+    margin: auto;
+    width: 70%;
+    display: block;
+
+}
+
+.car-container .btn {
+    /* padding: 15px 50px; */
+}
+
+a{
+    text-decoration: none;
+    color: var(--seconary);
+    
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    /* font-family: 'gilroy';       */
+}
+
+img{
+    max-width: 100%;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.flex-col{
+    flex-direction: column;
+}
+
+.brand {
+    font-weight: 700;
+    font-size: 2rem;
+    color: #000000;
+}
+
+nav{
+    display: none;
+}
+
+.flex-between {
+    justify-content: space-between;
+}
+
+.flex-center{
+    justify-content: center;
+}
+
+.flex-col-center{
+    align-items: center;
+}
+
+header{
+    padding: 1rem 0;
+}
+#hero-container{
+    padding: .5rem 2rem ;
+    background-image: url("images/Rectangle\ 38.png");
+    /* height: 100vh; */
+        background-size: 60% 45%;
+        
+        background-repeat: no-repeat;
+        background-position: top right;
+}
+
+
+
+
+#hero{
+    margin-top: 2rem;
+}
+
+#hero h1{
+    font-size: 4rem;
+}
+
+#hero p, #hero button{
+    margin-top: 2rem;
+}
+
+#hero div:last-child{
+    transform: translateY(-5rem);
+}
+
+main, footer{
+    padding: .5rem 2rem ;
+    margin-bottom: 3rem;
+
+}
+form{
+    align-content: space-around;
+    height: 15rem;
+
+}
+#pickup form > div{
+    flex-basis: 90%;
+}
+#pickup{
+    background: rgb(255, 255, 255);
+    box-shadow: 1px 4px 41px rgba(0, 0, 0, 0.1);    
+    max-width: 100%;
+    margin:auto;
+    padding: 3rem 1rem;
+}
+
+
+#pickup input {
+    padding: .7rem;
+    outline: none;
+    border: 1px solid black;
+    width: 100%;
+    /* height: 50px; */
+    border-radius: 1rem;
+    /* font-size: 12px; */
+} 
+
+
+.car-container > div {
+    border: 1px solid var(--seconary);
+    padding: 0 2rem 3rem;
+    border-radius: 1rem;   
+    margin: 1.5rem auto ;
+}
+
+#book-car h2{
+    font-size: 2.4rem;
+    margin:1rem 0;
+}
+
+.car-container h3{
+    font-size: 2rem;
+    margin:1rem 0;
+
+}
+
+.car-container p > span{
+    font-size: 2rem;
+}
+
+
+.m-left{
+    margin-left: auto;
+}
+
+.circle span{
+    margin:1rem 0;
+
+    display: inline-block;
+    border-radius: 1rem;
+    width: 20px;
+    height: 20px;
+}
+
+#book-car{
+    margin-top: 5rem;
+}
+
+.choose-container {
+    text-align: center;
+    /* padding: 10px 230px; */
+    gap: 60px;       
+}
+
+.choose-container >div {
+     box-shadow: 1px 4px 41px rgba(0, 0, 0, 0.1);
+     border-radius: 10px;
+     padding: 70px 40px;
+}
+
+.newsletter {  
+    background: #FFB600;
+    /* width: 90%; */
+    /* height: 400px; */
+    /* margin: 70px;   */
+    padding: 3rem;
+    /* border-radius: 20px; */
+}
+
+.newsletter h2 {
+    font-size: 2rem;
+}
+
+.newsletter >div {
+    background: var(--light);
+    /* margin: 50px 120px; */
+    /* border-radius: 10px; */
+    /* width: 850px;   */
+    /* height: 80px; */
+    margin-top: 3rem;
+    text-align: center;
+}
+
+.newsletter input {
+    border: none;
+    outline: none;
+    padding: 1rem;
+}
+
+footer {    
+    /* padding: 10px 100px;    */
+    gap: 10%;
+}
+
+footer a {
+    display: block;   
+    line-height: 250%;    
+}
+
+footer > div:nth-child(1) {
+    flex-basis: 100%;
+}
+
+footer > div:nth-child(2) {
+    flex-basis: 100%;
+    margin-top: 2rem;
+}
+
+footer h3{
+    font-size: 1.8rem;
+}
+
+@media (min-width: 576px){
+    .header{
+        background-image: url("images/Rectangle\ 38.png");
+        height: 100vh;
+        background-repeat: no-repeat;
+        background-position: right;
+    }
+
+}
+
+/* 
+
+
+
+
+
+.justify {
+    justify-content: space-around;
+}
+.direction {
+    flex-direction: column;
+}
+
+
+
+  
+
+  
+a{
+    color: black;
+}
+  
+
+
+
+
+.main-img {
+    position: absolute;
+    right: 50px;
+    top: 25%;
+}
+
+
+
+
+.heading  h1{
+    font-size: 40px;
+    padding: 50px 500px;
+    text-align: center;
+}
+.car-container {
+    padding: 10px 230px;    
+}
+
+.car-container .box {
+    border: 1px solid var(--seconary);
+    padding: 30px 20px;
+    border-radius: 10px;   
+    line-height: 40px;
+    margin: 15px;
+}
+
+
+
+.car-container .box .box-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+
+
+
+
+
+
+
+
+ */
+
+ .bg-red{
+    background-color: red;
+
+}
+
+.bg-blue{
+    background-color: blue;
+}
+
+.bg-pink{
+    background-color: pink
+}
+
+ .bg-black{
+    background-color: black;
+
+}
+
+.bg-orange{
+    background-color: orange;
+}
+
+.bg-grey{
+    background-color: grey;
+}
+
+ .bg-yellow{
+    background-color: yellow;
+
+}
+
+.bg-light-blue{
+    background-color: skyblue;
+}
+
+.bg-dark-blue{
+    background-color: darkblue
+}
