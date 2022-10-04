@@ -300,6 +300,11 @@ form{
     padding: 1rem;
 }
 
+.newsletter button{
+    padding: 1rem 2rem !important;
+
+}
+
 footer {    
     /* padding: 10px 100px;    */
     gap: 10%;
