@@ -23,6 +23,19 @@ p, span{
     text-align: center;
 }
 
+#input-location{
+    background: url("images/location-dot-solid.svg") no-repeat scroll 2px 2px;
+    background-size: 15px;
+    background-position: 5px;
+    padding-left: 25px !important;
+}
+
+#input-subscribe{
+    background: url("images/envelope-regular-24.png") no-repeat scroll 2px 2px;
+    background-size: 15px;
+    background-position: 5px;
+    padding-left: 25px !important;
+}
 button {
     padding: 1rem 3rem;
     cursor: pointer; 
@@ -44,8 +57,8 @@ button {
 
 .btn-alt{
     border: 1px solid var(--seconary);
-    margin: auto;
-    width: 70%;
+    margin: 1rem auto;
+    width: 100%;
     display: block;
 }
 
@@ -263,11 +276,7 @@ form{
 
 .newsletter {  
     background: #FFB600;
-    /* width: 90%; */
-    /* height: 400px; */
-    /* margin: 70px;   */
     padding: 6rem 3rem ;
-    /* border-radius: 20px; */
 }
 
 .newsletter h2 {
@@ -328,6 +337,11 @@ footer h3{
 }
 
 @media (min-width: 768px) {
+
+    .newsletter {  
+        background: #FFB600;
+        padding: 12rem 3rem ;
+    }
 
     #pickup{
         max-width: 100%;

@@ -8,9 +8,10 @@
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <script src="app.js" defer></script>
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a64cd6123a.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
 </head>
 <body>
     <section id="hero-container">
@@ -61,7 +62,7 @@
             <form class="row flex-center">
                 <div class="row flex-col ">
                     <span>Pick up Location</span>
-                    <input type="location" placeholder="Bayelsa Airport">
+                    <input id="input-location" type="location" placeholder="Bayelsa Airport" />
                 </div>
 
                 <div class="row flex-col">
@@ -81,13 +82,17 @@
                         <img src="images/car-1.png" alt="" width="300px" height="100%">
                     </div>
                     <h2>Porshe</h2>
-                    <p class="row"><span>2,800HP</span> <span class="m-left">8 persons</span></p>
-                    <h3>$40,000</h3>
+                    <p class="row">
+                        <box-icon name='cart'></box-icon>
+                        <span>2,800HP</span> <span class="m-left row"><box-icon name='user'></box-icon>8 persons</span>
+                    </p>
                     <div class="circle">
                         <span class="bg-black"></span>
                         <span class="bg-blue"></span>
                         <span class="bg-orange"></span>
                     </div>
+                    <h3>$40,000</h3>
+                    <p class="row" style="color: #737673;"><box-icon name='check-shield' color='#737673' ></box-icon>Available for customization</p>
                     <button class="btn-alt"><a href="#" class="btn">Book Now</a></button>
                 </div>
     
@@ -96,13 +101,18 @@
                         <img src="images/car-2.png" alt="" width="300px" height="230px">
                     </div>
                     <h2>BYD L3 GS-i</h2>
-                    <p class="row"><span>2,800HP</span> <span class="m-left">8 persons</span></p>
-                    <h3>$35,000</h3>
+                    <p class="row">
+                        <box-icon name='cart'></box-icon>
+                        <span>2,800HP</span> <span class="m-left row"><box-icon name='user'></box-icon>8 persons</span>
+                    </p>
+                    <!-- <p class="row"><span>2,800HP</span> <span class="m-left">8 persons</span></p> -->
                     <div class="circle">
                         <span class="bg-grey"></span>
                         <span class="bg-black"></span>
                         <span class="bg-yellow"></span>
                     </div>
+                    <h3>$35,000</h3>
+                    <p style="color: green;" class="row"><box-icon name='check-shield' color='#008000' ></box-icon>Available for customization</p>
                     <button class="btn-alt"><a href="#" class="btn">Book Now</a></button>
                 </div>
     
@@ -111,13 +121,18 @@
                         <img src="images/car-3.png" alt="" width="300px">
                     </div>
                     <h2>BYD S7 2.0</h2>
-                    <p class="row"><span>2,800HP</span> <span class="m-left">8 persons</span></p>
-                    <h3>$28,000</h3>
+                    <p class="row">
+                        <box-icon name='cart'></box-icon>
+                        <span>2,800HP</span> <span class="m-left row"><box-icon name='user'></box-icon>8 persons</span>
+                    </p>
+                    <!-- <p class="row"><span>2,800HP</span> <span class="m-left">8 persons</span></p> -->
                     <div class="circle">
                         <span class="bg-red"></span>
                         <span class="bg-black"></span>
                         <span class="bg-blue"></span>
                     </div>
+                    <h3>$28,000</h3>
+                    <p class="row" style="color: #737673;"><box-icon name='check-shield' color='#737673' ></box-icon>Available for customization</p>
                     <button class="btn-alt"><a href="#" class="btn">Book Now</a></button>
                 </div>
     
@@ -127,13 +142,18 @@
                         <img src="images/car-4.png" alt="" width="300px">
                     </div>
                     <h2>Tesla</h2>
-                    <p class="row"><span>2,800HP</span> <span class="m-left">8 persons</span></p>
-                    <h3>$32,000</h3>
+                    <p class="row">
+                        <box-icon name='cart'></box-icon>
+                        <span>2,800HP</span> <span class="m-left row"><box-icon name='user'></box-icon>8 persons</span>
+                    </p>
+                    <!-- <p class="row"><span>2,800HP</span> <span class="m-left">8 persons</span></p> -->
                     <div class="circle">
                         <span class="bg-grey"></span>
                         <span class="bg-light-blue"></span>
                         <span class="bg-red"></span>
                     </div>
+                    <h3>$32,000</h3>
+                    <p style="color: green;" class="row"><box-icon name='check-shield' color='#008000' ></box-icon>Available for customization</p>
                     <button class="btn-alt"><a href="#" class="btn">Book Now</a></button>
                 </div>
     
@@ -143,13 +163,18 @@
                         <img src="images/car-5.png" alt="" width="300px" height="170px">
                     </div>
                     <h2>Lamborghini</h2>
-                    <p class="row"><span>2,800HP</span> <span class="m-left">8 persons</span></p>
-                    <h3>$25,000</h3>
+                    <p class="row">
+                        <box-icon name='cart'></box-icon>
+                        <span>2,800HP</span> <span class="m-left row"><box-icon name='user'></box-icon>8 persons</span>
+                    </p>
+                    <!-- <p class="row"><span>2,800HP</span> <span class="m-left">8 persons</span></p> -->
                     <div class="circle">
                         <span class="bg-yellow"></span>
                         <span class="bg-blue"></span>
                         <span class="bg-black"></span>
                     </div>
+                    <h3>$25,000</h3>
+                    <p class="row" style="color: #737673;"><box-icon name='check-shield' color='#737673' ></box-icon>Available for customization</p>
                     <button class="btn-alt"><a href="#" class="btn">Book Now</a></button>
                 </div>
     
@@ -159,13 +184,19 @@
                         <img src="images/car-6.png" alt="" width="300px" height="160px">
                     </div>
                     <h2>Hyundai</h2>
-                    <p class="row"><span>2,800HP</span> <span class="m-left">8 persons</span></p>
-                    <h3>$19,500</h3>
+                    <p class="row">
+                        <box-icon name='cart'></box-icon>
+                        <span>2,800HP</span> <span class="m-left row"><box-icon name='user'></box-icon>8 persons</span>
+                    </p>
+                    <!-- <p class="row"><span>2,800HP</span> <span class="m-left">8 persons</span></p> -->
                     <div class="circle">
                         <span class="bg-dark-blue"></span>
                         <span class="bg-black"></span>
                         <span class="bg-red"></span>
                     </div>
+                    <h3>$19,500</h3>
+                    
+                    <p style="color: green;" class="row"><box-icon name='check-shield' color='#008000' ></box-icon>Available for customization</p>
                     <button class="btn-alt">Book Now</button>
                 </div>
             </div>
@@ -209,7 +240,7 @@
         <h2>Subscribe our news letter</h2>
         <p>Subscribe with us and get updated with the daily happenings</p>
         <div class="row flex-between justify direction">
-            <input type="text" placeholder="Enter email address">
+            <input id="input-subscribe" type="text" placeholder="Enter email address">
             <button class="btn-primary">Subscribe</button>
         </div>
 
