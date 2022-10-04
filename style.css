@@ -4,6 +4,10 @@
     --light: #fff
 }
 
+.d-none{
+    display: none !important;
+}
+
 html{
     font-size: 62.5%;
     font-family: 'Montserrat';
@@ -28,14 +32,14 @@ button {
 .btn-primary{
     background-color: #000000;
     color: var(--light);
+    border: none;
 }
 
 .btn-secondary {
     background-color: #FFB600;
     padding: 15px 40px;   
-    color: #000000;
-    cursor: pointer;     
     border: none;
+    color: var(--seconary);
 }
 
 .btn-alt{
@@ -43,11 +47,6 @@ button {
     margin: auto;
     width: 70%;
     display: block;
-
-}
-
-.car-container .btn {
-    /* padding: 15px 50px; */
 }
 
 a{
@@ -78,13 +77,41 @@ img{
 
 .brand {
     font-weight: 700;
-    font-size: 2rem;
+    font-size: 3rem;
     color: #000000;
 }
 
 nav{
-    display: none;
+    display: block;
+    position: absolute;
+    top:6rem;
+    width: 100%;
+    background-color: var(--primary);
+    padding: 2rem 2rem;
 }
+
+nav > a {
+    padding: 1rem;
+    font-size: 2rem;
+
+}
+
+nav > a:hover{
+    background-color: var(--light);
+}
+
+header a {
+    display: block;
+  }
+
+  header a.icon {
+      font-size: 3rem;
+  }
+
+  header .icon-container{
+    padding: .3rem 1rem;
+    background-color: var(--light);
+  }
 
 .flex-between {
     justify-content: space-between;
@@ -94,21 +121,28 @@ nav{
     justify-content: center;
 }
 
+.flex-item-center{
+    align-items: center;
+}
+
 .flex-col-center{
     align-items: center;
 }
 
 header{
     padding: 1rem 0;
+    position: relative;
 }
+
+
+
 #hero-container{
-    padding: .5rem 2rem ;
+    padding: 2% 4%;
     background-image: url("images/Rectangle\ 38.png");
-    /* height: 100vh; */
-        background-size: 60% 45%;
-        
-        background-repeat: no-repeat;
-        background-position: top right;
+    background-size: 60% 65%;
+    
+    background-repeat: no-repeat;
+    background-position: top right;
 }
 
 
@@ -135,9 +169,21 @@ main, footer{
     margin-bottom: 3rem;
 
 }
+
+#why-choose{
+    margin: 4rem 0;
+}
+
+#why-choose h2{
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    
+}
+
 form{
     align-content: space-around;
     height: 15rem;
+
 
 }
 #pickup form > div{
@@ -220,7 +266,7 @@ form{
     /* width: 90%; */
     /* height: 400px; */
     /* margin: 70px;   */
-    padding: 3rem;
+    padding: 6rem 3rem ;
     /* border-radius: 20px; */
 }
 
@@ -232,9 +278,10 @@ form{
     background: var(--light);
     /* margin: 50px 120px; */
     /* border-radius: 10px; */
-    /* width: 850px;   */
+    max-width: 60rem;
+
     /* height: 80px; */
-    margin-top: 3rem;
+    margin: 3rem auto 0;
     text-align: center;
 }
 
@@ -268,85 +315,90 @@ footer h3{
 }
 
 @media (min-width: 576px){
-    .header{
-        background-image: url("images/Rectangle\ 38.png");
-        height: 100vh;
-        background-repeat: no-repeat;
-        background-position: right;
+
+    #pickup{
+        max-width: 50rem;
+    }
+    
+    .choose-container >div {
+        max-width: 50rem;
+        margin: auto;
+        
+    }
+}
+
+@media (min-width: 768px) {
+
+    #pickup{
+        max-width: 100%;
     }
 
+    form{
+        height: 10rem;
+        gap: 6rem
+    }
+
+    .choose-container >div {
+        max-width: 35rem;
+        margin: auto;
+        
+    }
+
+
+    #hero-container{
+        background-position: top right;
+        background-size: 50%;
+        
+    }
+
+.icon-container{
+    display: none;
 }
 
-/* 
-
-
-
-
-
-.justify {
-    justify-content: space-around;
-}
-.direction {
-    flex-direction: column;
+nav{
+    display: flex;
+    gap: 2vw;
+    position: static;
+    /* top:6rem; */
+    width: initial;
+    background-color: transparent;
+    padding: 1.2rem;
 }
 
-
-
-  
-
-  
-a{
-    color: black;
-}
-  
-
-
-
-
-.main-img {
-    position: absolute;
-    right: 50px;
-    top: 25%;
+header a {
+    font-size: 1.8rem;
 }
 
+header a {
+    display: inline;
+  }
 
-
-
-.heading  h1{
-    font-size: 40px;
-    padding: 50px 500px;
-    text-align: center;
-}
-.car-container {
-    padding: 10px 230px;    
+  .d-none{
+    display: flex !important;
 }
 
-.car-container .box {
-    border: 1px solid var(--seconary);
-    padding: 30px 20px;
-    border-radius: 10px;   
-    line-height: 40px;
-    margin: 15px;
+#hero{
+    flex-wrap: nowrap;
 }
 
-
-
-.car-container .box .box-img img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    object-position: center;
+#pickup form > div {
+    flex-basis: 30%;
 }
 
+}
 
+@media (min-width: 992px) { 
+    nav{
+        display: flex;
+        gap: 6vw;
+        position: static;
+        /* top:6rem; */
+        width: initial;
+        background-color: transparent;
+        padding: 1.2rem;
+    }
+}
 
-
-
-
-
-
-
- */
 
  .bg-red{
     background-color: red;
@@ -385,4 +437,52 @@ a{
 
 .bg-dark-blue{
     background-color: darkblue
+}
+
+/* .fade-in{
+    animation: fade-in 1.2s cubic-bezier(0.390, 0.575, 0565, 1.000) both;
+
+}
+
+@keyframes fade-in{
+    0%{
+        transform: translateY(50px);
+        opacity: 0;
+    }
+    
+    100%{
+        transform: translateY(0);
+        opacity: 1;
+    }
+} */
+
+
+.fade-in {
+    -webkit-animation: fade-in 1.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+            animation: fade-in 1.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+}
+
+ @-webkit-keyframes fade-in {
+  0% {
+    -webkit-transform: translateY(50px);
+            transform: translateY(50px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes fade-in {
+  0% {
+    -webkit-transform: translateY(50px);
+            transform: translateY(50px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 1;
+  }
 }

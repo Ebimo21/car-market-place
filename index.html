@@ -7,27 +7,35 @@
     <title>Open</title>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <script src="app.js" defer></script>
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
-
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
     <section id="hero-container">
-        <header>
+        <header class="row flex-between flex-item-center">
             <div class="brand">
                 <a href="#">Open</a>
             </div>
             
-            <nav>
+            <nav id="myLinks" class="row d-none">
                 <a href="#">HOME</a>
                 <a href="#">DETAILS</a>
                 <a href="#">FEEDBACK</a>
                 <a href="#">SUPPORT</a>  
-                <button>Contact Us</button> 
+                <button class="btn-primary">Contact Us</button> 
             </nav>
+
+            <div class="icon-container" >
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                    <i class="fa fa-bars"></i>
+                    <!-- open -->
+                </a>
+            </div>
         </header>
 
-        <section id="hero" class="rows">
+        <section id="hero" class="row">
             <div >
                 <h1>The Worlds <br>
                         Largest Car <br>
@@ -39,12 +47,11 @@
                         customers.
                 </p>
 
-                <button class="btn2"> Book a Car</button>
-
+                <button class="btn-secondary"> Book a Car</button>
             </div>
 
             <div>
-                <img src="images/landing-car.png" alt="">
+                <img class="fade-in" src="images/landing-car.png" alt="">
             </div>
         </section>
     </section>
@@ -71,7 +78,7 @@
             <div class="car-container row">
                 <div class="box">
                     <div>
-                        <img src="images/car-1.png" alt="" width="100%" height="100%">
+                        <img src="images/car-1.png" alt="" width="300px" height="100%">
                     </div>
                     <h2>Porshe</h2>
                     <p class="row"><span>2,800HP</span> <span class="m-left">8 persons</span></p>
@@ -165,8 +172,8 @@
     
         </section>
 
-        <section>
-            <h1>Why choose Open</h1>
+        <section id="why-choose">
+            <h2 class="text-center">Why choose Open</h2>
     
             <div class="choose-container row">
                 <div>
@@ -198,10 +205,10 @@
 
     </main>
     
-    <section class="newsletter ">
+    <section class="newsletter text-center ">
         <h2>Subscribe our news letter</h2>
         <p>Subscribe with us and get updated with the daily happenings</p>
-        <div class=" row flex-between justify direction">
+        <div class="row flex-between justify direction">
             <input type="text" placeholder="Enter email address">
             <button class="btn-primary">Subscribe</button>
         </div>
